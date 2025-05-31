@@ -1,0 +1,137 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #4b6cb7, #182848);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav button {
+    margin: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #4b6cb7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav button:hover {
+    background-color: #3a54a0;
+    transform: translateY(-2px);
+}
+
+/* Section styling */
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #4b6cb7;
+    margin-bottom: 1rem;
+}
+
+section p, section ul {
+    font-size: 1rem;
+    color: #444;
+}
+
+section ul {
+    list-style: disc inside;
+    padding-left: 1rem;
+}
+
+section a {
+    color: #4b6cb7;
+    text-decoration: none
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #182848;
+    color: white;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav {
+        display:none;
+    }
+
+    nav button {
+        width: 100%;
+        margin: 0.3rem 0;
+    }
+
+    section {
+        padding: 1.2rem;
+        margin: 0.5rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p, section ul {
+        font-size: 0.95rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
